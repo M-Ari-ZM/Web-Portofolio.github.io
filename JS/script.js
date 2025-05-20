@@ -2,14 +2,6 @@
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 window.onscroll = function () {
-  // if (
-  //   document.body.scrollTop > 499 ||
-  //   document.documentElement.scrollTop > 499
-  // ) {
-  //   scrollToTopBtn.style.display = "block";
-  // } else {
-  //   scrollToTopBtn.style.display = "none";
-  // }
   if (
     document.body.scrollTop > 500 ||
     document.documentElement.scrollTop > 500
@@ -76,12 +68,6 @@ function validateForm() {
   var spanS = document.getElementsByClassName("closePopUpS")[0];
   var spanF = document.getElementsByClassName("closePopUpF")[0];
 
-  // window.onclick = function (event) {
-  //   if (event.target == popUpS || popUpF) {
-  //     popUpS.style.display = "none";
-  //     popUpF.style.display = "none";
-  //   }
-  // };
   spanS.onclick = function () {
     popUpS.style.display = "none";
     popUpF.style.display = "none";
