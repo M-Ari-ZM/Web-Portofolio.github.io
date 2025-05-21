@@ -188,6 +188,7 @@ body {
 .modal-position {
   place-content: center;
   height: 80%;
+  margin-top: 1rem;
 }
 
 .modal-content {
