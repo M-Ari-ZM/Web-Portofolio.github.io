@@ -532,8 +532,12 @@ body {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 450px) {
   .hero .img {
-    margin-top: 0rem;
+    margin-top: 2rem;
+  }
+
+  .modal {
+    align-items: center;
   }
 }
