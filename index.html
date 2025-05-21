@@ -25,6 +25,7 @@
     <nav
       class="navbar navbar-expand-lg navbar-dark shadow"
       style="background-color: rgb(89, 103, 103)"
+      id="navbar"
     >
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -35,7 +36,7 @@
             height="27"
             class="d-inline-block align-text-top"
           />
-          <strong>Portofolio Siswa</strong>
+          <strong class="ms-1">Portofolio Siswa</strong>
         </a>
         <button
           class="navbar-toggler"
@@ -218,8 +219,10 @@
         </div>
         <div id="myModal" class="modal">
           <span class="close"><i class="bi bi-x-circle"></i></span>
-          <img class="modal-content" id="imgPopUp" />
-          <div id="caption"></div>
+          <div class="modal-position">
+            <img class="modal-content" id="imgPopUp" />
+            <div id="caption"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -298,21 +301,21 @@
         <!-- PopUp -->
         <div id="pop-up-s" class="popup-s">
           <div class="popup-content-s">
-            <img src="IMG/Success.png" alt="Success" width="90px" />
+            <img src="IMG/Success.png" alt="Success" width="70px" />
             <p>
               <b>Pesan Anda Berhasil Dikirim</b>
             </p>
-            <span class="closePopUpS"><i class="bi bi-x-square"></i></span>
+            <span class="closePopUpS"><i class="bi bi-x-square-fill"></i></span>
           </div>
         </div>
 
         <div id="pop-up-f" class="popup-f">
           <div class="popup-content-f">
-            <img src="IMG/Failed.png" alt="Failed" width="90px" />
+            <img src="IMG/Failed.png" alt="Failed" width="70px" />
             <p>
               <b>Pesan Anda Tidak Valid</b>
             </p>
-            <span class="closePopUpF"><i class="bi bi-x-square"></i></span>
+            <span class="closePopUpF"><i class="bi bi-x-square-fill"></i></span>
           </div>
         </div>
         <!-- PopUp -->

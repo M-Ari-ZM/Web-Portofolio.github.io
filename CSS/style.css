@@ -39,20 +39,6 @@ body {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='200' height='200' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(223, 237, 237,1)'/%3E%3Ccircle cx='0' cy='20' r='1' fill='rgba(66, 118, 117,0.5)'/%3E%3Ccircle cx='40' cy='20' r='1' fill='rgba(66, 118, 117,0.5)'/%3E%3Cpath d='m 19.5 19.5 h1 v1 h-1z' fill='rgba(89, 103, 103,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
 }
 
-/* .hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 20%;
-  bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(66, 118, 117, 0.5) 8%,
-    rgba(255, 255, 255, 0) 50%
-  );
-} */
-
 .hero .img {
   margin-left: 7rem;
   margin-right: 5rem;
@@ -189,7 +175,6 @@ body {
 
 .modal {
   display: none;
-  flex-direction: column;
   position: fixed;
   z-index: 7000;
   padding: auto;
@@ -197,8 +182,13 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-position {
+  place-content: center;
+  height: 80%;
+  margin-top: 4rem;
 }
 
 .modal-content {
@@ -280,15 +270,6 @@ body {
   animation-range: entry 0% cover 30%;
 }
 
-/* .contact .contact-form .form {
-  padding: 2rem 2rem;
-  border-radius: 1rem;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
-  animation: appear ease-out;
-  animation-timeline: view();
-  animation-range: entry 0% cover 35%;
-} */
-
 .contact .contact-form .form .form-control {
   background-color: rgba(66, 118, 117, 0.5);
 }
@@ -316,11 +297,10 @@ body {
 .popup-content-s,
 .popup-content-f {
   display: fixed;
-  background-color: #ffffff;
-  border-radius: 3rem;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 2rem;
   margin: 5rem auto 200rem auto;
   padding: 10px;
-  border: 4px solid #000000;
   box-shadow: 0px 0px 5px rgba(1, 1, 3, 0.5);
   width: 20%;
   text-align: center;
@@ -360,23 +340,6 @@ body {
   box-shadow: 0px 0px 20px rgba(1, 1, 3, 0.5);
 }
 
-/* .footer .fcontent {
-  animation: fappear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 17%;
-}
-
-@keyframes fappear {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-} */
-
 .footer .socials {
   padding: 0 0 0.8rem;
   font-size: 25px;
@@ -413,6 +376,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 25px;
+  text-align: center;
   transition: opacity 0.3s linear, transform 0.3s ease;
   opacity: 0;
   z-index: 6000;
@@ -456,6 +420,10 @@ body {
 @media (max-width: 991px) {
   html {
     font-size: 76%;
+  }
+
+  .navbar .navbar-nav {
+    font-size: 1.5rem;
   }
 
   .hero {
@@ -542,6 +510,6 @@ body {
   }
 
   .hero .intro .name {
-    text-shadow: none;
+    text-shadow: 1px 1px 1px rgba(1, 1, 3, 0.5);
   }
 }
