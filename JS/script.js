@@ -70,19 +70,21 @@ function validateForm() {
 
   spanS.onclick = function () {
     popUpS.style.display = "none";
-    popUpF.style.display = "none";
+    document.body.style.overflow = "auto";
     Contact.reset();
   };
   spanF.onclick = function () {
-    popUpS.style.display = "none";
     popUpF.style.display = "none";
+    document.body.style.overflow = "auto";
   };
 
   if (name == "" || email == "" || text == "") {
     popUpF.style.display = "block";
+    document.body.style.overflow = "hidden";
     return false;
   } else {
     popUpS.style.display = "block";
+    document.body.style.overflow = "hidden";
     return false;
   }
 }
