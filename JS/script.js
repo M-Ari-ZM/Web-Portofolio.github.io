@@ -26,7 +26,7 @@ var img = document.getElementById("gallery1");
 var modalImg = document.getElementById("imgPopUp");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
-  modal.style.display = "grid";
+  modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 };
@@ -36,7 +36,7 @@ var img = document.getElementById("gallery2");
 var modalImg = document.getElementById("imgPopUp");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
-  modal.style.display = "grid";
+  modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 };
@@ -46,7 +46,7 @@ var img = document.getElementById("gallery3");
 var modalImg = document.getElementById("imgPopUp");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
-  modal.style.display = "grid";
+  modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 };
